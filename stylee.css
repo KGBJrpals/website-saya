@@ -1,0 +1,296 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND */
+body {
+    background: url("background.jpg.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #e6e9ff;
+}
+
+/* CONTAINER */
+#page {
+    width: 960px;
+    margin: 40px auto;
+    padding: 25px;
+    background: rgba(12, 16, 48, 0.75);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    box-shadow: 0 0 35px rgba(90, 110, 255, 0.35);
+}
+
+/* HEADER */
+#section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#section img {
+    height: 80px;
+    margin-right: 18px;
+}
+
+#section span {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #cbd2ff;
+}
+
+/* MENU */
+#header ul {
+    list-style: none;
+    display: flex;
+    background: linear-gradient(90deg, #3b2fbf, #204fcf);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#header ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#header ul li a:hover,
+#header ul li.current a {
+    background: rgba(255,255,255,0.2);
+}
+
+/* CONTENT */
+#content {
+    margin-top: 20px;
+}
+
+/* BERANDA */
+.home-hero {
+    background: linear-gradient(135deg, rgba(70,90,255,0.35), rgba(30,40,120,0.35));
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.home-hero h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.home-card {
+    background: rgba(0,0,0,0.35);
+    padding: 18px;
+    border-radius: 10px;
+    border-top: 3px solid #5f7cff;
+    box-shadow: 0 0 18px rgba(90,110,255,0.3);
+    transition: 0.3s;
+}
+
+.home-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 25px rgba(120,150,255,0.6);
+}
+
+/* PROFIL SECTION */
+.profil-box {
+    margin-top: 20px;
+}
+
+.profil-box h3 {
+    color: #8fa2ff;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* ITEM PROFIL */
+.profil-item {
+    background: rgba(0, 0, 0, 0.35);
+    border-left: 4px solid #5f7cff;
+    padding: 15px 18px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(80, 100, 255, 0.25);
+}
+
+/* JUDUL ITEM */
+.profil-item h4 {
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+/* ISI */
+.profil-item p,
+.profil-item ul {
+    color: #d6dcff;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.profil-item ul {
+    padding-left: 20px;
+}
+
+.profil-item ul li {
+    margin-bottom: 6px;
+}
+/* KRITIK & SARAN */
+.kritik-box {
+    margin-top: 20px;
+}
+
+.kritik-box h3 {
+    color: #8fa2ff;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.kritik-desc {
+    color: #cfd6ff;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* FORM */
+.kritik-form {
+    background: rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(90, 110, 255, 0.3);
+}
+
+.kritik-form label {
+    display: block;
+    margin-bottom: 6px;
+    color: #ffffff;
+}
+
+.kritik-form input,
+.kritik-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: rgba(20, 30, 80, 0.8);
+    border: 1px solid #5f7cff;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.kritik-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.kritik-form input:focus,
+.kritik-form textarea:focus {
+    outline: none;
+    border-color: #9aa9ff;
+    box-shadow: 0 0 8px rgba(120, 150, 255, 0.6);
+}
+
+/* TOMBOL */
+.kritik-form button {
+    background: linear-gradient(90deg, #4a3cff, #2f6bff);
+    border: none;
+    padding: 12px 25px;
+    color: #ffffff;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.kritik-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(100, 140, 255, 0.8);
+}
+/* DEMOKRASIKU */
+.demo-box {
+    margin-top: 20px;
+}
+
+.demo-box h3 {
+    color: #8fa2ff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.demo-desc {
+    color: #cfd6ff;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* GRID CARD */
+.demo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* CARD */
+.demo-card {
+    background: rgba(0, 0, 0, 0.35);
+    padding: 18px;
+    border-radius: 10px;
+    border-left: 4px solid #5f7cff;
+    box-shadow: 0 0 20px rgba(90, 110, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.demo-card h4 {
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.demo-card p {
+    color: #d6dcff;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.demo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 25px rgba(120, 150, 255, 0.6);
+}
+/* MENU KELAS */
+.kelas-box {
+    margin-top: 30px;
+}
+
+.kelas-box h3 {
+    color: #8fa2ff;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* GRID KELAS */
+.kelas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* CARD KELAS */
+.kelas-card {
+    background: rgba(0, 0, 0, 0.35);
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+    border-bottom: 3px solid #5f7cff;
+    box-shadow: 0 0 18px rgba(90, 110, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ke
