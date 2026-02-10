@@ -2,80 +2,79 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Web Sekolah</title>
-    <link rel="stylesheet" type="text/css" href="stylee.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demokrasiku | SMKN 3 BUDURAN</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div id="page">
-        <div id="header">
-            <div id="section">
-                <div>
-                    <a href="index.html">
-                        <img src="logo.png" alt="Logo Sekolah">
-                    </a>
+        <header id="header">
+            <div class="logo-area">
+                <img src="logo.png" alt="Logo">
+                <div class="header-text">
+                    <h1>SMK NEGERI 3 BUDURAN</h1>
+                    <p>Excellence in Technology and Character</p>
                 </div>
-                <span>
-                    SMKN 3 BUDURAN<br><br>
-                    Belajar teknologi untuk membangun bangsa.
-                </span>
             </div>
+        </header>
 
+        <nav>
             <ul>
-                <li class="current"><a href="index.html">Beranda</a></li>
-                <li><a href="profil.html">Profil</a></li>
-                <li><a href="demokrasiku.html">Demokrasi Sekolah</a></li>
-                <li><a href="kritik.html">Kritik dan Saran</a></li>
+                <li><a href="index.html">BERANDA</a></li>
+                <li><a href="profil.html">PROFIL</a></li>
+                <li><a href="struktur.html">STRUKTUR KELAS</a></li>
+                <li class="current"><a href="demokrasiku.html">DEMOKRASIKU</a></li>
+                <li><a href="kritik.html">KRITIK & SARAN</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <div id="content">
-            <div>
-                <h2>Selamat datang di website sekolah</h2>
-                <p>SMK BISA!!!</p>
+        <main>
+            <section class="hero-content">
+                <h2 class="section-title">Portal Demokrasi Sekolah</h2>
+                <p class="hero-subtitle">Mewujudkan ekosistem sekolah yang demokratis, transparan, dan partisipatif bagi seluruh warga SMKN 3 Buduran.</p>
+            </section>
+
+            <div class="grid-container">
+                <div class="card">
+                    <i class="fas fa-vote-yea fa-3x"></i>
+                    <h3>Pemilihan OSIS</h3>
+                    <p>Sistem E-Voting yang transparan dan akuntabel sebagai laboratorium demokrasi nyata bagi siswa.</p>
+                </div>
+                <div class="card">
+                    <h3>Aspirasi Terbuka</h3>
+                    <i class="fas fa-bullhorn fa-3x"></i>
+                    <p>Kanal formal penyampaian ide dan gagasan orisinal demi kemajuan kualitas pendidikan sekolah.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-users fa-3x"></i>
+                    <h3>Musyawarah</h3>
+                    <p>Menjunjung tinggi budaya diskusi kolektif untuk mencapai mufakat yang berkeadilan sosial.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-gavel fa-3x"></i>
+                    <h3>Regulasi Adil</h3>
+                    <p>Penyusunan tata tertib sekolah yang melibatkan perwakilan siswa secara aktif dan terbuka.</p>
+                </div>
             </div>
-			<div class="demo-box">
-    <h3>Demokrasiku</h3>
-    <p class="demo-desc">
-        Demokrasiku adalah wadah aspirasi dan partisipasi siswa
-        dalam kehidupan demokrasi di lingkungan sekolah.
-    </p>
+        </main>
 
-    <div class="demo-grid">
-        <div class="demo-card">
-            <h4>Pemilihan OSIS</h4>
-            <p>
-                Proses pemilihan ketua OSIS secara demokratis
-                untuk melatih tanggung jawab dan kepemimpinan siswa.
-            </p>
-        </div>
-
-        <div class="demo-card">
-            <h4>Aspirasi Siswa</h4>
-            <p>
-                Media penyaluran aspirasi, ide, dan pendapat siswa
-                demi kemajuan sekolah.
-            </p>
-        </div>
-
-        <div class="demo-card">
-            <h4>Musyawarah</h4>
-            <p>
-                Kegiatan diskusi dan musyawarah bersama untuk
-                mencapai mufakat dalam setiap keputusan.
-            </p>
-        </div>
-
-        <div class="demo-card">
-            <h4>Tata Tertib</h4>
-            <p>
-                Pembentukan dan penerapan aturan sekolah secara adil,
-                transparan, dan bertanggung jawab.
-            </p>
-        </div>
+        <footer class="dev-footer">
+            <h3 class="footer-title">Developed by</h3>
+            <div class="dev-container">
+                <div class="dev-card">
+                    <div class="dev-img-container"><img src="nizar.jpg" class="dev-img"></div>
+                    <h4>M. Nizar A.</h4>
+                    <a href="https://www.instagram.com/jajar_genjangg" class="social-btn"><i class="fab fa-instagram"></i> @Nizar</a>
+                </div>
+                <div class="dev-card">
+                    <div class="dev-img-container"><img src="christian.jpg" class="dev-img"></div>
+                    <h4>Christian B.S.P</h4>
+                    <a href="https://www.instagram.com/christian_bstya" class="social-btn"><i class="fab fa-instagram"></i> @Christian</a>
+                </div>
+            </div>
+        </footer>
     </div>
-</div>
-
-        </div>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>

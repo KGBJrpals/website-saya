@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8"><title>Struktur | SMKN 3 BUDURAN</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <div id="page">
+        <header id="header">
+            <div class="logo-area"><img src="logo.png"><h1>SMK NEGERI 3 BUDURAN</h1></div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">BERANDA</a></li>
+                <li><a href="profil.html">PROFIL</a></li>
+                <li class="current"><a href="struktur.html">STRUKTUR KELAS</a></li>
+                <li><a href="demokrasiku.html">DEMOKRASIKU</a></li>
+                <li><a href="kritik.html">KRITIK & SARAN</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2 class="section-title">Struktur Kelas</h2>
+            <div class="teacher-container">
+                <div class="member-card teacher-card">
+                    <div class="member-img"><img src="teacher.jpg"></div>
+                    <h3>Nama Wali Kelas</h3><p>Wali Kelas</p>
+                </div>
+            </div>
+            <div class="student-grid" id="studentGrid">
+                </div>
+        </main>
+    </div>
+    <script>
+        const grid = document.getElementById('studentGrid');
+        for(let i=1; i<=35; i++) {
+            grid.innerHTML += `
+                <div class="member-card">
+                    <div class="member-img"><img src="student.jpg"></div>
+                    <h4>Siswa ${i}</h4>
+                    <p>Absen ${i}</p>
+                </div>
+            `;
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -2,67 +2,79 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Web Sekolah</title>
-    <link rel="stylesheet" type="text/css" href="stylee.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil | SMKN 3 BUDURAN</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div id="page">
-        <div id="header">
-            <div id="section">
-                <div>
-                    <a href="index.html">
-                        <img src="logo.png" alt="Logo Sekolah">
-                    </a>
+        <header id="header">
+            <div class="logo-area">
+                <img src="logo.png" alt="Logo">
+                <div class="header-text">
+                    <h1>SMK NEGERI 3 BUDURAN</h1>
+                    <p>Excellence in Technology and Character</p>
                 </div>
-                <span>
-                    SMKN 3 BUDURAN<br><br>
-                    Belajar teknologi untuk membangun bangsa.
-                </span>
             </div>
+        </header>
 
+        <nav>
             <ul>
-                <li class="current"><a href="index.html">Beranda</a></li>
-                <li><a href="profil.html">Profil</a></li>
-                <li><a href="demokrasiku.html">Demokrasi Sekolah</a></li>
-                <li><a href="kritik.html">Kritik dan Saran</a></li>
+                <li><a href="index.html">BERANDA</a></li>
+                <li class="current"><a href="profil.html">PROFIL</a></li>
+                <li><a href="demokrasiku.html">DEMOKRASIKU</a></li>
+                <li><a href="kritik.html">KRITIK & SARAN</a></li>
+                <li><a href="struktur.html">STRUKTUR KELAS</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <div id="content">
-            <div>
-                <h2>Selamat datang di website sekolah</h2>
-                <p>SMK BISA!!!</p>
+        <main>
+            <h2 class="section-title reveal-up">Profil Institusi</h2>
+            <div class="card full-width reveal-up">
+                <h3>Tentang Kami</h3>
+                <p>Lembaga pendidikan kejuruan yang mengintegrasikan kedisiplinan industri dengan kurikulum nasional untuk mencetak tenaga profesional TI.</p>
             </div>
-			<div class="profil-box">
-    <h3>Profil Sekolah</h3>
 
-    <div class="profil-item">
-        <h4>Tentang Sekolah</h4>
-        <p>
-            SMKN 3 BUDURadalah sekolah kejuruan yang berfokus pada pengembangan
-            teknologi, keterampilan, dan karakter untuk membangun generasi unggul.
-        </p>
-    </div>
+            <div class="grid-container">
+                <div class="card reveal-left">
+                    <h3>Visi</h3>
+                    <p>Menghasilkan lulusan berakhlak mulia, kompeten, dan memiliki daya saing global.</p>
+                </div>
+                <div class="card reveal-right">
+                    <h3>Misi Utama</h3>
+                    <ul class="styled-list">
+                        <li>Optimalisasi kompetensi teknologi.</li>
+                        <li>Inkubasi kreativitas berkelanjutan.</li>
+                        <li>Internalisasi budaya kerja industri.</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
 
-    <div class="profil-item">
-        <h4>Visi</h4>
-        <p>
-            Menjadi sekolah unggulan dalam bidang teknologi dan inovasi
-            yang berdaya saing nasional.
-        </p>
+        <footer class="dev-footer">
+            <h3 class="footer-title">Meet the Developers</h3>
+            <div class="dev-container">
+                <div class="dev-card reveal-up">
+                    <div class="dev-img-container">
+                        <img src="nizar.jpg" alt="Nizar" class="dev-img">
+                    </div>
+                    <h4>M. Nizar A.</h4>
+                    <p>Web Developer</p>
+                    <a href="https://www.instagram.com/jajar_genjangg" class="social-btn"><i class="fab fa-instagram"></i> @Nizar</a>
+                </div>
+                <div class="dev-card reveal-up">
+                    <div class="dev-img-container">
+                        <img src="christian.jpg" alt="Christian" class="dev-img">
+                    </div>
+                    <h4>Christian B.S.P</h4>
+                    <p>UI/UX Designer</p>
+                    <a href="https://www.instagram.com/christian_bstya" class="social-btn"><i class="fab fa-instagram"></i> @Christian</a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 SMKN 3 Buduran</p>
+        </footer>
     </div>
-
-    <div class="profil-item">
-        <h4>Misi</h4>
-        <ul>
-            <li>Mengembangkan kompetensi teknologi siswa</li>
-            <li>Mendorong kreativitas dan inovasi</li>
-            <li>Membentuk karakter disiplin dan profesional</li>
-        </ul>
-    </div>
-</div>
-
-        </div>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
