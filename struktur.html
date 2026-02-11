@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8"><title>Struktur | SMKN 3 BUDURAN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Struktur | SMKN 3 BUDURAN</title>
     <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div id="page">
         <header id="header">
-            <div class="logo-area"><img src="logo.png"><h1>SMK NEGERI 3 BUDURAN</h1></div>
+            <div class="logo-area">
+                <img src="logo.png" alt="Logo">
+                <div class="header-text">
+                    <h1>SMK NEGERI 3 BUDURAN</h1>
+                    <p>Excellence in Technology and Character</p>
+                </div>
+            </div>
         </header>
+
         <nav>
             <ul>
                 <li><a href="index.html">BERANDA</a></li>
@@ -18,30 +28,79 @@
                 <li><a href="kritik.html">KRITIK & SARAN</a></li>
             </ul>
         </nav>
+
         <main>
             <h2 class="section-title">Struktur Kelas</h2>
+            
             <div class="teacher-container">
                 <div class="member-card teacher-card">
-                    <div class="member-img"><img src="teacher.jpg"></div>
-                    <h3>Nama Wali Kelas</h3><p>Wali Kelas</p>
+                    <div class="member-img"><img src="PHuda.jpeg" alt="Wali Kelas"></div>
+                    <h3>Pak Huda</h3>
+                    <p>Wali Kelas</p>
                 </div>
             </div>
-            <div class="student-grid" id="studentGrid">
-                </div>
+
+            <div class="student-grid" id="studentGrid"></div>
         </main>
     </div>
+
     <script>
         const grid = document.getElementById('studentGrid');
-        for(let i=1; i<=35; i++) {
+
+        // DAFTAR DATA SISWA (35 ANAK)
+        // Silakan ganti "Nama Siswa" dan "foto.jpg" dengan data asli teman Anda
+        const dataSiswa = [
+            { absen: "01", nama: "Abdul Aziz Choiri", foto: "Ajis.jpeg" },
+            { absen: "02", nama: "Adinda Olivia", foto: "Adinda.jpeg" },
+            { absen: "03", nama: "Agnes Juliana Egyn Serro Mahadini", foto: "Egyn.jpeg" },
+            { absen: "04", nama: "Alif Tasya Lyandra", foto: "Alif.jpeg" },
+            { absen: "05", nama: "Andra Herlin Firdiana", foto: "Andra.jpeg" },
+            { absen: "06", nama: "Ardian Fahri Hutama", foto: "Ardi.jpeg" },
+            { absen: "07", nama: "Bilqis Novian Putri", foto: "Bilqis.jpeg" },
+            { absen: "08", nama: "Chafidin Raka Ahmadiansyah", foto: "Riki.jpeg" },
+            { absen: "09", nama: "Christian Bintang Setya Putera", foto: "Kris.jpeg" },
+            { absen: "10", nama: "Dinda Aprilia Putri Najwa", foto: "Dinda.jpeg" },
+            { absen: "11", nama: "Doni Marvel Rasya Suryanto", foto: "Doni.jpeg" },
+            { absen: "12", nama: "Evan Maulana Rashid", foto: "Epan.jpeg" },
+            { absen: "13", nama: "Fairuz Azhar Al Baihaqi", foto: "Irus.jpeg" },
+            { absen: "14", nama: "Felicia Putri Ubaidah", foto: "Felicia.jpeg" },
+            { absen: "15", nama: "Fihriztra Prabu Rudyan Kafka", foto: "Prabu.jpeg" },
+            { absen: "16", nama: "Firmansyah Rosid", foto: "Maman.jpeg" },
+            { absen: "17", nama: "Hariadi Musafak", foto: "Safa.jpeg" },
+            { absen: "18", nama: "Kasyafani Ibrahim", foto: "Ibnu.jpeg" },
+            { absen: "19", nama: "Mohammad Reyvan Islami Agustin", foto: "Repan.jpeg" },
+            { absen: "20", nama: "Malvino Adyaksa Chandra Ramadhan", foto: "Pino.jpeg" },
+            { absen: "21", nama: "Maulidan Daffa Wijaya", foto: "Dapa.jpeg" },
+            { absen: "22", nama: "Mohammad Varian Tirta Samudra", foto: "Tirta.jpeg" },
+            { absen: "23", nama: "Mohammad Rivan El Shirazy Pambudi", foto: "Rivan.jpeg" },
+            { absen: "24", nama: "Muhammad Fachri Firmansyah", foto: "Fachri.jpeg" },
+            { absen: "25", nama: "Muhammad Davin Putra Arianto", foto: "Ambon.jpeg" },
+            { absen: "26", nama: "Muhammad Muqorrobin", foto: "Robin.jpeg" },
+            { absen: "27", nama: "Muhammad Nizar Ansyori", foto: "Nizar.jpeg" },
+            { absen: "28", nama: "Mukhammad Feri Dwi Nasrullah", foto: "Peri.jpeg" },
+            { absen: "29", nama: "Navila Dwi Anandita F", foto: "Vila.jpeg" },
+            { absen: "30", nama: "Nur Rachmawati", foto: "Wati.jpeg" },
+            { absen: "31", nama: "Rahsajati Isaka Wijaya Dilaga", foto: "Saka.jpeg" },
+            { absen: "32", nama: "Rehan Rifian Alfaridzi", foto: "Rehan.jpeg" },
+            { absen: "33", nama: "Salsabila Nur Hidayati Rahma", foto: "Salsa.jpeg" },
+            { absen: "34", nama: "Venny Anggraeni", foto: "Peni.jpeg" },
+            { absen: "35", nama: "Zhafira Ledya Kinanti", foto: "Zhafira.jpeg" }
+        ];
+
+        // Memasukkan data ke HTML secara otomatis
+        dataSiswa.forEach(siswa => {
             grid.innerHTML += `
                 <div class="member-card">
-                    <div class="member-img"><img src="student.jpg"></div>
-                    <h4>Siswa ${i}</h4>
-                    <p>Absen ${i}</p>
+                    <div class="member-img">
+                        <img src="${siswa.foto}" alt="${siswa.nama}">
+                    </div>
+                    <h4>${siswa.nama}</h4>
+                    <p>Absen ${siswa.absen}</p>
                 </div>
             `;
-        }
+        });
     </script>
+
     <script src="script.js"></script>
 </body>
 </html>
